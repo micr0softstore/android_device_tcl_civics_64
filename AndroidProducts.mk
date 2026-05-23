@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_civics_64.mk
+    $(LOCAL_DIR)/twrp_civics_64.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_civics_64-user \
-    omni_civics_64-userdebug \
-    omni_civics_64-eng
+    twrp_civics_64-user \
+    twrp_civics_64-userdebug \
+    twrp_civics_64-eng
