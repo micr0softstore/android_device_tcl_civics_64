@@ -5,4 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/alps/civics_64
+LOCAL_PATH := device/tcl/civics_64
