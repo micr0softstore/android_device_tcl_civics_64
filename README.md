@@ -1,4 +1,4 @@
-# Android device tree for None None (civics_64)
+# Android device tree for TCL 406s (civics_64)
 
 ```
 #
