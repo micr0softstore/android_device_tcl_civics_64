@@ -10,14 +10,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from civics_64 device
-$(call inherit-product, device/alps/civics_64/device.mk)
+$(call inherit-product, device/tcl/civics_64/device.mk)
 
 PRODUCT_DEVICE := civics_64
-PRODUCT_NAME := omni_civics_64
-PRODUCT_MANUFACTURER := alps
+PRODUCT_NAME := twrp_civics_64
+PRODUCT_MANUFACTURER := tcl
 
 PRODUCT_GMS_CLIENTID_BASE := android-alps
 
