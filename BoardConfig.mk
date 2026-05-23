@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/alps/civics_64
+DEVICE_PATH := device/tcl/civics_64
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -47,7 +47,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := civics_64_defconfig
-TARGET_KERNEL_SOURCE := kernel/alps/civics_64
+TARGET_KERNEL_SOURCE := kernel/tcl/civics_64
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -64,10 +64,10 @@ BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
-BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
-BOARD_SUPER_PARTITION_GROUPS := alps_dynamic_partitions
-BOARD_ALPS_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product preload oem odm
-BOARD_ALPS_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
+BOARD_SUPER_PARTITION_SIZE := 10737418240 # TODO: Fix hardcoded value
+BOARD_SUPER_PARTITION_GROUPS := tcl_dynamic_partitions
+BOARD_TCL_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product preload oem odm
+BOARD_TCL_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
